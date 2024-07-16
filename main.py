@@ -18,7 +18,7 @@ client = AzureOpenAI(
     api_version=os.getenv("GPT_4o_API_VERSION")
 )
 
-with open("prompt.txt", "r") as file:
+with open("SamplePrompt.txt", "r") as file:
     prompt = file.read()
 
 def sort_files_numerically(folder_path):
@@ -117,7 +117,6 @@ def handle_logs(foldername, log):
 
 def main():
     folder_name = "images"
-
     current_directory = os.path.dirname(os.path.abspath(__file__))
     folder_path = os.path.join(current_directory, folder_name)
     sorted_folder_path = sort_files_numerically(folder_path)

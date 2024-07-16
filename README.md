@@ -6,10 +6,11 @@ This project utilizes the GPT-4o model for object detection within images stored
 
 ## Features
 
-- **Batch Processing**: Process multiple images in a specified folder, allowing for efficient analysis of large datasets.
-- **Advanced Object Detection**: Utilizes GPT-4o's cutting-edge AI to detect and classify a wide range of objects within images.
-- **Customizable Outputs**: Offers options to customize the output format, making it easier to integrate with other applications or for further analysis.
-- **Easy to Use**: Simple setup and execution process, designed with a focus on user experience.
+- **Batch Processing**: Efficiently processes images in bulk.
+- **Advanced Object Detection**: Uses GPT-4o AI for detailed object identification.
+- **Customizable Outputs**: Flexible output formatting for easy integration.
+- **Enhanced Logging**: Logs images, responses, and request times for performance analysis.
+- **User-Friendly**: Streamlined setup and operation.
 
 ## Prerequisites
 
@@ -61,7 +62,7 @@ Contributions to this project are welcome. Please follow the standard fork-and-p
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
