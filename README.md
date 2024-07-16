@@ -56,6 +56,14 @@ To use the GPT-4o Object Detection tool, follow these steps:
 
 3. **View Results**: The script will process each image and output the detection results. The results can be found in the specified output directory or console, based on your configuration.
 
+## Optimizations
+
+- Processing multiple images in one single request to the model might be more optimal. You’re essentially batching the images together. This means that instead of making separate API calls for each image (which would each have their own overhead costs such as network latency, server processing time, etc.), you make a single API call that includes all the images.
+- URLs are easier to manage and reuse, especially when dealing with multiple images over extended interactions, and for that reason OpenAI suggests passing images via URL's instead of base64
+- The latency of the model can also be improved by downsizing your images ahead of time to be less than the maximum size they are expected them to be. For low res mode, we expect a 512px x 512px image. For high res mode, the short side of the image should be less than 768px and the long side should be less than 2,000px. (https://platform.openai.com/docs/guides/vision/managing-images)
+- General guidance on reducing latency: [The LLM Latency Guidebook: Optimizing Response Times for GenAI Applications - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/the-llm-latency-guidebook-optimizing-response-times-for-genai/ba-p/4131994)
+
+
 ## Contributing
 
 Contributions to this project are welcome. Please follow the standard fork-and-pull request workflow. If you plan to introduce a major change, it's best to open an issue first to discuss it.
