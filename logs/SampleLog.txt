@@ -1,0 +1,5 @@
+Image: C:\9.jpg, Request Time: 2.6984 seconds, Response: {'total_count': 3}
+Image Folder: <folder_name>
+Average Request Time: 2.6419 seconds
+Minimum request time: 1.5482 seconds
+Maximum request time: 11.939 seconds
