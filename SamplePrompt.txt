@@ -1,3 +1,4 @@
 Given an image, identify and describe all the objects present. 
 Provide a detailed description of each object, including its position in the image, apparent size, color, and any other notable features. 
 Additionally, if possible, provide context about the scene or environment the objects are in. The description should be clear and concise, suitable for further processing or analysis.
+Return json.
